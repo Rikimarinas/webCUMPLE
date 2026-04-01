@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aventura Nena World</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contenedor {
+      position: relative;
+      width: 100%;
+      max-width: 500px; /* Perfecto para iPhone 12 */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%); /* Subido un poco más */
+      padding: 15px 35px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      background: #ff3b3b;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    button:hover {
+      background: #ff6b6b;
+      transform: translate(-50%, -70%) scale(1.05);
+    }
+
+    /* Ajustes extra para pantallas pequeñas */
+    @media (max-width: 480px) {
+      button {
+        font-size: 1.1rem;
+        padding: 12px 28px;
+        transform: translate(-50%, -65%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <img src="portada.png" alt="Aventura Nena World">
+
+    <button onclick="window.location.href='mapa_aventura_v7.html'">
+      Juega ahora
+    </button>
+  </div>
+
+</body>
+</html>
